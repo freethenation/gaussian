@@ -1,13 +1,13 @@
 # gaussian
 
 A JavaScript model of the [Normal](http://en.wikipedia.org/wiki/Normal_distribution)
-(or Gaussian) distribution.
+(or Gaussian) distribution. To install run `npm install free-gaussian`
 
 ## API
 
 ### Creating a Distribution
 ```javascript
-var gaussian = require('gaussian');
+var gaussian = require('free-gaussian');
 var distribution = gaussian(mean, variance);
 ```
 
@@ -29,3 +29,7 @@ var distribution = gaussian(mean, variance);
 - `add(d)`: returns the result of adding this and the given distribution
 - `sub(d)`: returns the result of subtracting this and the given distribution
 - `scale(c)`: returns the result of scaling this distribution by the given constant
+
+## History
+This is a modified version of [errcw's library](https://github.com/errcw/gaussian)
+with some additional features and a cleaned up code base.
